@@ -1,0 +1,91 @@
+.dashboard-header{
+    height: 7vh;
+    width: 100%;
+   background-color:rgb(103, 6, 6) ;
+   position: relative;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.dashboard-header .avatar{
+     height: 4vh;
+     width: 40px;
+     background-color: wheat;
+     left: 90%;
+     border-radius:255px ;
+     -webkit-border-radius:255px ;
+     -moz-border-radius:255px ;
+     -ms-border-radius:255px ;
+     -o-border-radius:255px ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin-top: 10px;
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.sidebar {
+    margin: 0;
+padding-top: 10px;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    margin-top: 0;
+    text-decoration: none;
+  }
+  
+  
+  .sidebar a.active {
+    background-color: rgb(103, 6, 6);
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+
+  div.content {
+    margin-left: 200px;
+    padding-top: 10px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a top bar */
+  /* @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  } */
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  /* @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: inline-start;
+    }
+  } */
+
+  @media screen and (max-width:500px) {
+    .sidebar{
+        width: 80px;
+        font-size: 12px;
+    }
+  }

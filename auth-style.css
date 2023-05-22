@@ -1,0 +1,87 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Cardo', serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/register-bg.jpg");
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.card {
+  width: 550px !important;
+  height: 670px !important;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+/* .card:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+} */
+
+.card form h2 {
+  color: rgb(103, 6, 6);
+  padding-bottom: 55px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card form .input-box {
+  height: 50px;
+  width: 300px;
+}
+
+.card form .input-box::placeholder {
+  text-align: center;
+}
+
+.card form .btn {
+  background-color:rgb(103, 6, 6) !important;
+  height: 50px;
+  width: 300px;
+  border: none;
+}
+
+.alternate {
+  height: 90px;
+  margin-top: 15px;
+}
+
+.alternate a .reg {
+  color: blue !important;
+}
+
+@media screen  and (max-width:400px) {
+  body{
+    padding: 10px;
+  }
+  .card{
+    height: 500px !important;
+    width: 430px !important;
+    
+  }
+}
